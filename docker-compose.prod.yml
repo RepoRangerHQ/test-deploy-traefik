@@ -37,7 +37,7 @@ services:
       # === วิธีที่ 1: ใช้ Cloudflare Proxy (แนะนำ - ง่ายที่สุด) ===
       # Cloudflare จะ terminate SSL ให้ แล้วส่ง traffic มาที่ Traefik
       # ตั้ง SSL/TLS เป็น "Full" หรือ "Full (Strict)" ใน Cloudflare Dashboard
-      - "traefik.http.routers.vue-app.rule=Host(`yourdomain.com`) || Host(`www.yourdomain.com`)"
+      - "traefik.http.routers.vue-app.rule=Host(`vue.devng.pro`) || Host(`www.vue.devng.pro`)"
       - "traefik.http.routers.vue-app.entrypoints=websecure"
       - "traefik.http.routers.vue-app.tls=true"
       
